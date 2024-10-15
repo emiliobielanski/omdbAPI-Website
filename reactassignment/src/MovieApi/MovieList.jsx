@@ -5,7 +5,7 @@ import Movie from './Movie'
 
 const MovieList = ({lists}) => {
   return (
-    <div>
+    <div className='mainListBody'>
         
         {lists.Response === "True" ?
           lists.Search.map((list) => (

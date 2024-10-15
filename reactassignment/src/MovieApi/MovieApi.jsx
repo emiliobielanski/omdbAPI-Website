@@ -8,7 +8,6 @@ const MovieApi = () => {
 
   function handleChange (e) {
     setNewInput(e.target.value)
-    console.log(newInput)
 }
 
 
@@ -17,7 +16,6 @@ const MovieApi = () => {
         const response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=28d44ad8&s=${newInput}`);
         lists = await response.json();
         setList(lists);
-        console.log(lists);
       } catch(error){
         console.log(error);
       } 

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Header = () => {
   return (
-    <div>Header
-        <form action=""></form>
-    </div>
-  )
+    <header className="header">
+      <div className="header-content">
+        <h1 style={{color: "white"}}>Movie Finder</h1>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
